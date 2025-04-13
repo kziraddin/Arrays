@@ -42,7 +42,63 @@ def insertAtIndex(arr, val, i, length, capacity):
     return True
     
 
+def removeEnd(arr, length):
+    if length > 0:
+        arr[length - 1] = 0
+        return True
+    return False
 
-    """NOTE:
-    when we run the unit tests for our functions, error messages that we include in our functions are popping up in our output
-    We want to suppress the print statements during testing. We will modify our functions to use logging instead of print"""
+
+# remove at specified position
+def removeAtIndex(arr, i, length):
+    if i < 0 or i >= length:
+        print("\nInvalid index.")
+        return False
+    
+    for index in range(i, length - 1):
+            arr[index] = arr[index + 1]
+
+    arr[length - 1] = 0
+    return True # to update length
+
+
+
+
+def sortArray(array):
+    
+    def mergeSort(arr):
+        if len(arr) <= 1:
+            return arr
+    
+        mid = (len(arr)) // 2
+
+        left_arr = mergeSort(arr[:mid])
+        right_arr = mergeSort(arr[mid:])
+    
+        return merge(left_arr, right_arr)
+
+    def merge(left, right):
+        merged = []
+        i = 0 # for left array
+        j = 0 # for right array
+
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+                merged.append(left[i])
+                i += 1
+            else:
+                merged.append(right[j])
+                j += 1
+        
+        # could be remaining elements 
+        while i < len(left):
+            merged.append(left[i])
+            i += 1
+        
+        while j < len(right):
+            merged.append(right[j])
+            j += 1
+
+        return merged
+
+    return mergeSort(array)
