@@ -1,6 +1,6 @@
 # Array Operations in Python
 
-This project demonstrates how to perform basic fixed-size array (static array) operations in Python, such as inserting elements at the end, at the beginning, and at a specified index. It mimics low-level array behavior (like in C/C++) using pre-allocated lists.
+This project demonstrates how to perform basic fixed-size array operations in Python, such as inserting elements at the end, at the beginning, and at a specified index. It mimics low-level array behavior (like in C/C++) using pre-allocated lists.
 
 ---
 
