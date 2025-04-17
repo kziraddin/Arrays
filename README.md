@@ -112,10 +112,6 @@ Ziraddin — LinkedIn • GitHub
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
----
-
-Let me know if you'd like to include example code snippets, add screenshots, or include a GIF showing interaction with the menu.
-
 
 ## Demo Video
 https://github.com/user-attachments/assets/4671963c-bb07-47c3-87ee-b3794b31a26a
